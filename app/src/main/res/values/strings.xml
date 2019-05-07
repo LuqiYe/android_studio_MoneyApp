@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoneyApp</string>
+    <string name="edit_error_msg">Please Enter</string>
+    <string name="pass_lngth_error">Password Should Have 6 Char</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_mobile">Invalid Mobile</string>
+</resources>

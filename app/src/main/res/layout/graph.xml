@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HistoryActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="How I Spent My Money"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textViewBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Balance: $0.00"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Search Transactions"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/startDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:text="Start Date" />
+        <Button
+            android:id="@+id/endDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:text="End Date" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:onClick="SearchNow"
+            android:inputType="textPersonName"
+            android:text="Search" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:onClick="ResetNow"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:text="Reset" />
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <com.github.mikephil.charting.charts.PieChart
+           android:id="@+id/chart1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+   </RelativeLayout>
+</LinearLayout>
